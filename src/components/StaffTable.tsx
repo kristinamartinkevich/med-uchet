@@ -61,7 +61,7 @@ export const StaffTable: React.FC<StaffTableProps> = ({
                   onClick={() => onDelete(item.id)}
                   className="text-red-600 hover:text-red-900"
                 >
-                  Удалит
+                  Удалить
                 </button>
               </td>
             </tr>

@@ -3,6 +3,7 @@ import { Nurse } from '../types';
 import { StaffTable } from '../components/StaffTable';
 import { StaffForm } from '../components/StaffForm';
 import { mockNurses } from '../data/mockData';
+import { Plus } from 'lucide-react';
 
 export const NursesPage: React.FC = () => {
   const [nurses, setNurses] = useState<Nurse[]>(mockNurses);
@@ -49,8 +50,9 @@ export const NursesPage: React.FC = () => {
             setEditingNurse(undefined);
             setIsFormOpen(true);
           }}
-          className="px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700"
+          className="px-4 flex items-center py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-600 hover:bg-green-700"
         >
+          <Plus className='h-5 w-5 mr-2' />
           Добавить Медсестру
         </button>
       </div>
